@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>我的购物车</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="headBar">
+		<div class="topBar">
+			<div class="comWidth clearfix">
+				<div class="leftArea">
+					<a href="#" class="collection">收藏网站</a>
+				</div>
+				<div class="rightArea">
+					欢迎来到慕课网！<a href="#">[登录]</a><a href="#">[免费注册]</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="logoBar">
+			<div class="comWidth clearfix">
+				<div class="logo fl">
+					<a href="#"><img src="icon/logo.gif" alt="online shop"></a>
+				</div>
+				<div class="step-wrap">
+					<div class="step">
+						<ul class="step-text clearfix">
+							<li class="step1 active">我的购物车</li>
+							<li class="step2 active">填写核对订单</li>
+							<li class="step3">订单提交成功</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cart-cont comWidth">
+			<div class="cart-panel">
+				<h3 class="cart-panel-header">收货信息</h3>
+				<div class="delivery-info-wrap">
+					<form action="">
+						<div class="delivery-item item-devision clearfix">
+							<span class="item-label">
+								<i>*</i>所在地区:
+							</span>
+							<div class="item-wrap">
+								<div class="locationSelect">
+									北京市 海淀区 五环内<span></span>
+									<ul class="showSlect hide">
+										<li>上地</li>
+										<li>五道口</li>
+										<li>魏公村</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="delivery-item item-devision clearfix">
+						<span class="item-label">
+							<i>*</i>详细地址:
+						</span>
+						<div class="item-wrap item-address">
+							<input type="text" placeholder="最多输入26个汉字">
+						</div>
+					</div>
+					<div class="delivery-item item-devision clearfix">
+						<span class="item-label">
+							<i>*</i>收 货 人:
+						</span>
+						<div class="item-wrap item-name">
+							<input type="text" placeholder="最多输入10个汉字">
+						</div>
+					</div>
+					<div class="delivery-item item-devision clearfix">
+						<span class="item-label ">
+							<i>*</i>手  机:
+						</span>
+						<div class="item-wrap item-phoneNum">
+							<input type="text" placeholder="如18612341234"><span>或固定电话：</span><input type="text" class="phoneNum-sm" placeholder="区号" ><span>-</span><input type="text" placeholder="电话号码"><span>-</span><input type="text" placeholder="分机号（可选）">
+						</div>
+					</div>
+					<div class="delivery-item ">
+						<input type="button" value="确认收获地址" class="item-confirm">
+					</div>
+				</div>
+			</div>
+			<div class="cart-panel">
+				<h3 class="cart-panel-header">支付方式</h3>
+				<div class="delivery-info-wrap">
+					<ul class="pay-list">
+						<li class="pay-item">
+							<input type="radio" name="cart-input-pay" id="pay-weixin"><label for="pay-weixin">微信支付</label><i class="weixin-icon"></i><span>用微信扫一扫就能付!</span>
+						</li>
+						<li class="pay-item">
+							<input type="radio" name="cart-input-pay" id="pay-ali"><label for="pay-ali">货到付款</label><span>送货上门后再付款，支持现金或银行卡付款</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="cart-panel">
+				<h3 class="cart-panel-header">发票信息</h3>
+				<div class="delivery-info-wrap">
+					<div class="invoice-need-wrap">
+						<input type="checkbox" id="invoice-need-inpu"><label for="invoice-need-inpu">需要发票</label>
+					</div>
+					<div class="invoice-item clearfix">
+						<span class="item-label">
+							<i>*</i>所在地区:
+						</span>
+						<select>
+						  <option value="1">商业零售发票</option>
+						  <option value="2">2</option>
+						  <option value="opel">3</option>
+						  <option value="audi">4</option>
+						</select>
+					</div>
+					<div class="invoice-item clearfix">
+						<span class="item-label">
+							<i>*</i>所在地区:
+						</span>
+						<select>
+						  <option value="1">个人</option>
+						  <option value="2">2</option>
+						  <option value="opel">3</option>
+						  <option value="audi">4</option>
+						</select>
+						<input type="text">
+					</div>
+					<div class="invoice-item invoice-btn-box clearfix">
+						<input type="button" value="保存" class="item-save">
+						<input type="button" value="取消" class="item-cancel">
+					</div>
+				</div>
+			</div>
+			<div class="cart-panel">
+				<h3 class="cart-panel-header">送货清单</h3>
+				<div class="buy-th buy-th-col-5">
+					<div class="buy-td td-1">商品名称</div>
+					<div class="buy-td td-2">单价</div>
+					<div class="buy-td td-3">返现</div>
+					<div class="buy-td td-4">数量</div>
+					<div class="buy-td td-5">小计</div>
+				</div>
+				<div class="order-item order-item-col-5">
+					<div class="order-itemInfo order-td td-1">
+						<div class="info-detail order-td clearfix">
+							<div class="info-img">
+								<a href="#">
+									<img src="images/fridge-icon.jpg" alt="">
+								</a>
+							</div>
+							<div class="info-msg">
+								<div class="info-tit">
+									<a href="#">Hisien 海信 BCD-202D 202升 三门冰箱 （银色）</a>
+								</div>
+								<p>[赠品]保鲜盒。抽真空保鲜盒-海信冰箱赠品</p>
+							</div>
+						</div>
+						<div class="info-price order-td">1549</div>
+					</div>
+					<div class="order-quantity order-td td-2">
+						<span>1</span>
+					</div>
+					<div class="order-discount order-td td-3">
+						<span>10</span>
+					</div>
+					<div class="order-itemPay order-td td-4">
+						<span class="simple-price">1549</span>
+					</div>
+					<div class="seperator"></div>
+				</div>
+				<div class="order-item order-item-col-5">
+					<div class="order-itemInfo order-td td-1">
+						<div class="info-detail order-td clearfix">
+							<div class="info-img">
+								<a href="#">
+									<img src="images/fridge-icon.jpg" alt="">
+								</a>
+							</div>
+							<div class="info-msg">
+								<div class="info-tit">
+									<a href="#">Hisien 海信 BCD-202D 202升 三门冰箱 （银色）</a>
+								</div>
+								<p>[赠品]保鲜盒。抽真空保鲜盒-海信冰箱赠品</p>
+							</div>
+						</div>
+						<div class="info-price order-td">1549</div>
+					</div>
+					<div class="order-quantity order-td td-2">
+						<span>1</span>
+					</div>
+					<div class="order-discount order-td td-3">
+						<span>10</span>
+					</div>
+					<div class="order-itemPay order-td td-4">
+						<span class="simple-price">1549</span>
+					</div>
+					<div class="seperator"></div>
+				</div>
+				<div class="order-require-msg">
+					<a href="#">若您对包裹有特殊要求，请在此留言</a>
+				</div>
+				<p class="order-invalid-text"><i></i>抱歉，以下商品暂时不能购买</p>
+				<div class="seperator"></div>
+				<div class="order-item order-item-Invalid">
+					<div class="order-itemInfo order-td td-1">
+						<div class="info-detail order-td clearfix">
+							<div class="info-img">
+								<a href="#">
+									<img src="images/fridge-icon.jpg" alt="">
+								</a>
+							</div>
+							<div class="info-msg">
+								<div class="info-tit">
+									<a href="#">Hisien 海信 BCD-202D 202升 三门冰箱 （银色）</a>
+								</div>
+								<p class="msg-invalid-num">数量：<span>1</span>件</p>
+								<p class="msg-invalid-money">￥1544.00 <span>（无货）</span> </p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="cart-panel">
+				<h3 class="cart-panel-header">订单结算</h3>
+				<div class="delivery-info-wrap sumbit-info-wrap">
+					<div class="sumbit-total-text ">
+						总计<em>￥1459</em>
+					</div>
+					<div class="sumbit-btn-box ">
+						<input type="button" value="提交订单" class="item-submit">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>
+			<a href="#">慕课简介</a><i>|</i><a href="#">慕课公告</a><i>|</i><a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i><a href="#">客服热线：400-675-1234</a>
+		</p>
+		<p>Copyright&nbsp;©&nbsp;2006&nbsp;-&nbsp;2014&nbsp;慕课版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+		<div class="footPic">
+			<img src="images/footer_img.gif" alt=""><img src="images/footer_img.gif" alt=""><img src="images/footer_img.gif" alt=""><img src="images/footer_img.gif" alt="">
+		</div>
+	</footer>
+</body>
+</html>
